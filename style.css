@@ -15,14 +15,15 @@ body {
   background: #5145BA;
 }
 
-:where(.config-container, .quiz-container) {
-  /* display: none; */
+:where(.config-container, .quiz-container, .result-container) {
+  display: none;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
 }
 
 .config-container {
+  /* display: none; */
   width: 415px;
   padding: 25px;
   text-align: center;
@@ -69,7 +70,7 @@ body {
   border-color: #5145ba;
   background: #dfdafd;
 }
-.config-option button,
+.config-option button:hover,
 .quiz-content .answer-option:hover {
   background: #dad5fd;
 }
@@ -185,7 +186,8 @@ body {
 .quiz-footer .question-status {
   font-weight: 500;
 }
-.quiz-footer .question-status b {
+.quiz-footer .question-status b,
+.result-container .result-message b {
   font-weight: 600;
 }
 
@@ -195,4 +197,21 @@ body {
   gap: 5px;
   align-items: center;
   padding: 9px 17px;
+}
+.result-container {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  width: 410px;
+}
+.result-container .result-img {
+  width: 110px;
+}
+.result-container .result-title {
+  margin-top: 30px;
+}
+.result-container .result-message {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 15px;
 }
