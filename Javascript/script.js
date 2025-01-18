@@ -2,13 +2,19 @@ const answerOptions = document.querySelector('.answer-options');
 const nextQuestionBtn = document.querySelector('.next-question-btn')
 
 let quizCategory = 'programming';
-let currentQuestion = null
+let currentQuestion = null;
+const questionsIndexHistory = [];
 
 // Fetch a random from pased on the selected category
 const getRandomQuestion = () => {
   const categoryQuestions = questions.find(cat => cat.category.toLowerCase() === quizCategory.toLowerCase()).questions || [];
 
-  const randomQuestion = categoryQuestions[Math.floor(Math.random() * categoryQuestions.length)]
+  // Filter out already asked questions and choose a random one
+  const availableQuestion = categoryQuestions.filter((_, index) => !questionsIndexHistory.includes(index) )
+
+  const randomQuestion = availableQuestion[Math.floor(Math.random() * availableQuestion.length)]
+
+  questionsIndexHistory.push(categoryQuestions.indexOf(randomQuestion))
   return randomQuestion;
 }
 // Highlight the correct answer option and add icon
@@ -32,7 +38,10 @@ const handleAnswer = (option, answerIndex) => {
   option.insertAdjacentHTML('beforeend', iconHTML);
 
   // Disable all answer options after one option is selected
-  answerOptions.querySelectorAll('.answer-option').forEach(option => option.style.pointerEvents = 'none')
+  answerOptions.querySelectorAll('.answer-option').forEach(option => option.style.pointerEvents = 'none');
+
+  nextQuestionBtn.style.visibility = 'visible'
+
 }
 
 // Render the current question and its options in the quiz
@@ -43,6 +52,7 @@ const renderQuestion = () => {
 
   // Update the UI
   answerOptions.innerHTML = '';
+  nextQuestionBtn.style.visibility = 'hidden'
   document.querySelector('.question-text').textContent = currentQuestion.question;
 
 
