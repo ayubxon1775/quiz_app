@@ -11,8 +11,28 @@ const getRandomQuestion = () => {
   const randomQuestion = categoryQuestions[Math.floor(Math.random() * categoryQuestions.length)]
   return randomQuestion;
 }
+// Highlight the correct answer option and add icon
+const highlightCorrectAnswer = () => {
+  const correctOption = answerOptions.querySelectorAll(".answer-option")[currentQuestion.correctAnswer];
+  correctOption.classList.add('correct')
+  const iconHTML = `<span class="material-symbols-rounded">check_circle</span>`;
+  correctOption.insertAdjacentHTML('beforeend', iconHTML)
+}
+
+// Handle the user's answer selection
 const handleAnswer = (option, answerIndex) => {
-  const isCorrect = currentQuestion
+  const isCorrect = currentQuestion.correctAnswer === answerIndex;
+  option.classList.add(isCorrect ? 'correct' : 'incorrect');
+  !isCorrect ? highlightCorrectAnswer() :  '';
+
+  
+  
+  // Insert icon based on correctness
+  const iconHTML = `<span class="material-symbols-rounded">${isCorrect ? 'check_circle': 'cancel'}<span/>`;
+  option.insertAdjacentHTML('beforeend', iconHTML);
+
+  // Disable all answer options after one option is selected
+  answerOptions.querySelectorAll('.answer-option').forEach(option => option.style.pointerEvents = 'none')
 }
 
 // Render the current question and its options in the quiz
