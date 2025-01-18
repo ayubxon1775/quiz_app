@@ -1,13 +1,21 @@
 const answerOptions = document.querySelector('.answer-options');
-const nextQuestionBtn = document.querySelector('.next-question-btn')
+const nextQuestionBtn = document.querySelector('.next-question-btn');
+const questionStatus = document.querySelector('.question-status');
+
 
 let quizCategory = 'programming';
+let numberOfQuestions = 10;
 let currentQuestion = null;
 const questionsIndexHistory = [];
 
 // Fetch a random from pased on the selected category
 const getRandomQuestion = () => {
   const categoryQuestions = questions.find(cat => cat.category.toLowerCase() === quizCategory.toLowerCase()).questions || [];
+
+  // Show the results if all questions have been used
+  if(questionsIndexHistory.length >= Math.min(categoryQuestions.length, numberOfQuestions)) {
+    return console.log("Quiz Completed");
+  }
 
   // Filter out already asked questions and choose a random one
   const availableQuestion = categoryQuestions.filter((_, index) => !questionsIndexHistory.includes(index) )
@@ -54,6 +62,8 @@ const renderQuestion = () => {
   answerOptions.innerHTML = '';
   nextQuestionBtn.style.visibility = 'hidden'
   document.querySelector('.question-text').textContent = currentQuestion.question;
+  questionStatus.innerHTML = `
+  <b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`
 
 
   // Create option <li> elements and append them, and add click event listeners
