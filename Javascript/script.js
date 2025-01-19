@@ -1,12 +1,55 @@
+const configContainer = document.querySelector('.config-container');
+const quizContainer = document.querySelector('.quiz-container');
 const answerOptions = document.querySelector('.answer-options');
 const nextQuestionBtn = document.querySelector('.next-question-btn');
 const questionStatus = document.querySelector('.question-status');
+const timerDisplay = document.querySelector('.time-duration');
+const resultContainer = document.querySelector('.result-container')
 
-
+const QUIZ_TIME_LIMIT = 10;
+let currentTime = QUIZ_TIME_LIMIT;
+let timer = null;
 let quizCategory = 'programming';
-let numberOfQuestions = 10;
+let numberOfQuestions = 5;
 let currentQuestion = null;
 const questionsIndexHistory = [];
+let correctAnswerCount = 0;
+
+// Display the quiz result and hide the quiz container
+const showQuizResult = () => {
+  quizContainer.style.display = 'none';
+  resultContainer.style.display = 'block';
+
+  const resultText = `You answered <b>${correctAnswerCount} </b> out of <b>${numberOfQuestions} </b>questions correctly. Great effect`
+  document.querySelector('.result-message').innerHTML = resultText
+
+}
+
+// Clear and reset the timer
+const resetTimer = () => {
+  clearInterval(timer);
+  currentTime = QUIZ_TIME_LIMIT;
+  timerDisplay.textContent = `${currentTime}s`
+}
+
+const startTimer = () => {
+  timer = setInterval(() => {
+    currentTime--;
+    timerDisplay.textContent = `${currentTime}s`
+
+    if(currentTime <= 0) {
+      clearInterval(timer);
+      highlightCorrectAnswer()
+      nextQuestionBtn.style.visibility = 'visible';
+
+       // Disable all answer options after one option is selected
+  answerOptions.querySelectorAll('.answer-option').forEach(option => option.style.pointerEvents = 'none');
+
+
+
+    }
+  }, 1000);
+}
 
 // Fetch a random from pased on the selected category
 const getRandomQuestion = () => {
@@ -14,7 +57,7 @@ const getRandomQuestion = () => {
 
   // Show the results if all questions have been used
   if(questionsIndexHistory.length >= Math.min(categoryQuestions.length, numberOfQuestions)) {
-    return console.log("Quiz Completed");
+    return showQuizResult();
   }
 
   // Filter out already asked questions and choose a random one
@@ -35,9 +78,10 @@ const highlightCorrectAnswer = () => {
 
 // Handle the user's answer selection
 const handleAnswer = (option, answerIndex) => {
+  clearInterval(timer);
   const isCorrect = currentQuestion.correctAnswer === answerIndex;
   option.classList.add(isCorrect ? 'correct' : 'incorrect');
-  !isCorrect ? highlightCorrectAnswer() :  '';
+  !isCorrect ? highlightCorrectAnswer() :  correctAnswerCount++;
 
   
   
@@ -56,7 +100,9 @@ const handleAnswer = (option, answerIndex) => {
 const renderQuestion = () => {
   currentQuestion = getRandomQuestion();
   if(!currentQuestion) return;
-  console.log(currentQuestion);
+
+  resetTimer()
+  startTimer()
 
   // Update the UI
   answerOptions.innerHTML = '';
@@ -76,6 +122,26 @@ const renderQuestion = () => {
   })
 }
 
-renderQuestion();
+// Start the quiz render the random question
+const startQuiz = () => {
+  configContainer.style.display = 'none';
+  quizContainer.style.display = 'block'
+  renderQuestion();
+}
 
-nextQuestionBtn.addEventListener('click', renderQuestion)
+// Reset the quiz and return to the configuration container
+const resetQuiz = () => {
+  resetTimer();
+  correctAnswerCount = 0;
+  questionsIndexHistory.length = 0;
+  configContainer.style.display = 'block'
+  resultContainer.style.display = 'none'
+}
+
+
+
+
+
+nextQuestionBtn.addEventListener('click', renderQuestion);
+document.querySelector('.try-again-btn').addEventListener('click', resetQuiz);
+document.querySelector('.start-quiz-btn').addEventListener('click', startQuiz);

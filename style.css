@@ -23,7 +23,7 @@ body {
 }
 
 .config-container {
-  /* display: none; */
+  display: block;
   width: 415px;
   padding: 25px;
   text-align: center;
@@ -102,7 +102,6 @@ body {
   background: #403795;
 }
 .quiz-container{
-  display: block;
   width: 480px;
 }
 
