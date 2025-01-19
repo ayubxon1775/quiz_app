@@ -6,22 +6,22 @@ const questionStatus = document.querySelector('.question-status');
 const timerDisplay = document.querySelector('.time-duration');
 const resultContainer = document.querySelector('.result-container')
 
-const QUIZ_TIME_LIMIT = 10;
+const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
 let quizCategory = 'programming';
 let numberOfQuestions = 5;
 let currentQuestion = null;
 const questionsIndexHistory = [];
-let correctAnswerCount = 0;
+let correctAnswersCount = 0;
 
 // Display the quiz result and hide the quiz container
 const showQuizResult = () => {
   quizContainer.style.display = 'none';
   resultContainer.style.display = 'block';
 
-  const resultText = `You answered <b>${correctAnswerCount} </b> out of <b>${numberOfQuestions} </b>questions correctly. Great effect`
-  document.querySelector('.result-message').innerHTML = resultText
+  const resultText = `You answered <b>${correctAnswersCount} </b> out of <b>${numberOfQuestions} </b>questions correctly. Great effect`
+  document.querySelector('.result-message').innerHTML = resultText;
 
 }
 
@@ -41,11 +41,11 @@ const startTimer = () => {
       clearInterval(timer);
       highlightCorrectAnswer()
       nextQuestionBtn.style.visibility = 'visible';
+      quizContainer.querySelector('.quiz-timer').style.background ='#c31402'
+
 
        // Disable all answer options after one option is selected
   answerOptions.querySelectorAll('.answer-option').forEach(option => option.style.pointerEvents = 'none');
-
-
 
     }
   }, 1000);
@@ -81,7 +81,7 @@ const handleAnswer = (option, answerIndex) => {
   clearInterval(timer);
   const isCorrect = currentQuestion.correctAnswer === answerIndex;
   option.classList.add(isCorrect ? 'correct' : 'incorrect');
-  !isCorrect ? highlightCorrectAnswer() :  correctAnswerCount++;
+  !isCorrect ? highlightCorrectAnswer() : correctAnswersCount++;
 
   
   
@@ -107,6 +107,7 @@ const renderQuestion = () => {
   // Update the UI
   answerOptions.innerHTML = '';
   nextQuestionBtn.style.visibility = 'hidden'
+  quizContainer.querySelector('.quiz-timer').style.background ='#32313c'
   document.querySelector('.question-text').textContent = currentQuestion.question;
   questionStatus.innerHTML = `
   <b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`
@@ -125,23 +126,35 @@ const renderQuestion = () => {
 // Start the quiz render the random question
 const startQuiz = () => {
   configContainer.style.display = 'none';
-  quizContainer.style.display = 'block'
+  quizContainer.style.display = 'block';
+
+  // Update the quiz category and number of questions
+  quizCategory = configContainer.querySelector(".category-option.active").textContent;
+  numberOfQuestions = parseInt(configContainer.querySelector(".question-option.active").textContent);
+
   renderQuestion();
 }
+
+// Highlight the selected option on click category on no of question
+document.querySelectorAll('.category-option, .question-option').forEach(option => {
+  option.addEventListener('click', () => {
+    option.parentNode.querySelector('.active').classList.remove('active');
+    option.classList.add('active')
+  });
+});
+
 
 // Reset the quiz and return to the configuration container
 const resetQuiz = () => {
   resetTimer();
-  correctAnswerCount = 0;
+  correctAnswersCount = 0;
   questionsIndexHistory.length = 0;
   configContainer.style.display = 'block'
   resultContainer.style.display = 'none'
 }
 
 
-
-
-
 nextQuestionBtn.addEventListener('click', renderQuestion);
+
 document.querySelector('.try-again-btn').addEventListener('click', resetQuiz);
 document.querySelector('.start-quiz-btn').addEventListener('click', startQuiz);
