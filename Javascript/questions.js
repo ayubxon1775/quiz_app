@@ -2,18 +2,279 @@
 
 const questions = [
   {
-    category: "programming",
+    category: "HTML",
     questions: [
+      // 1
       {
-        question: "CSS nima",
-        options: ["cascading style sheet", "????????", "?????????", "????????"],
+        question: "HTML nima?",
+        options: ["Dasturlash tili", "HyperText Markup Language", 'Style yaratish tili', "Ma'lumotlar bazasi tili"],
+        correctAnswer: 1,
+      },
+      // 2
+      {
+        question: "<h1> tegining vazifasi nima?",
+        options: ["Havolalar yaratish", "Eng katta sarlavha yaratish", 'Paragraf yaratish', "Rasm qo'shish"],
+        correctAnswer: 1,
+      },
+      // 3
+      {
+        question: "<a> tegi nimani anglatadi?",
+        options: ["Audio", "Video", "Havola (link)", "Rasmlar"],
+        correctAnswer: 2,
+      },
+      // 4
+      {
+        question: "HTMLda matnni qalin ko'rinishda qilish uchun qaysi teg ishlatiladi?",
+        options: ["<b>", "<i>", "<u>", "<p>"],
         correctAnswer: 0,
       },
+      // 5
+      {
+        question: "HTMLda tasvirni qo'shish uchun qaysi teg ishlatiladi?",
+        options: ["<img>", "<image>", "<picture>", "<photo>"],
+        correctAnswer: 0,
+      },
+      // 6
+      {
+        question: "HTMLda qaysi teg jadval yaratish uchun ishlatiladi?",
+        options: ["<tr>", "<td>", "<th>", "<table>"],
+        correctAnswer: 3,
+      },
+      // 7
+      {
+        question: "HTMLda qaysi atribut havola manzilini ko'rsatadi?",
+        options: ["href", "src", "alt", "title"],
+        correctAnswer: 0,
+      },
+      // 8
+      {
+        question: "<ul> tegi nimani anglatadi?",
+        options: ["Belgili ro'yxat", "Jadval", "Belgisiz ro'yxat", "Havola"],
+        correctAnswer: 2,
+      },
+      // 9
+      {
+        question: "HTMLda yangi qatorga o'tish uchun qaysi teg ishlatiladi?",
+        options: ["<p>", "<br>", "<hr>", "<div>"],
+        correctAnswer: 1,
+      },
+      // 10
+      {
+        question: "HTMLda bo'sh joyni ko'rsatish uchun qaysi teg ishlatiladi?",
+        options: ["&nbsp;", "<space>", "<tab>", "&br;"],
+        correctAnswer: 0,
+      },
+      // 11
+      {
+        question: "HTMLda <!DOCTYPE> nimani anglatadi?",
+        options: ["CSS ulash", "Rasm yuklash", "Faylni bosma shaklda chiqarish", "HTML faylning versiyasini aniqlash"],
+        correctAnswer: 3,
+      },
+      // 12
+      {
+        question: "HTML hujjati qaysi teg bilan boshlanadi?",
+        options: ["<html>", "<body>", "<head>", "<meta>"],
+        correctAnswer: 0,
+      },
+      // 13
+      {
+        question: "Qaysi teg matnni qiyshaytirib yozadi?",
+        options: ["<u>", "<b>", "<i>", "<p>"],
+        correctAnswer: 2,
+      },
+      // 14
+      {
+        question: "HTMLda rasmning alternativ matnini ko'rsatish uchun qaysi atribut ishlatiladi?",
+        options: ["src", "alt", "title", "href"],
+        correctAnswer: 1,
+      },
+      // 15
+      {
+        question: "HTMLda qaysi teg gorizontal chiziq chizadi?",
+        options: ["<hr>", "<br>", "<div>", "<h>"],
+        correctAnswer: 0,
+      },
+      // 16
+      {
+        question: "<title> tegi qayerda ishlatiladi?",
+        options: ["Body ichida", "Head ichida", "Footer ichida", "Jadval ichida"],
+        correctAnswer: 1,
+      },
+      // 17
+      {
+        question: "HTML hujjatida qaysi teg kontentni ajratib turadi?",
+        options: ["<div>", "<span>", "<section>", "Barchasi"],
+        correctAnswer: 3,
+      },
+      // 18
+      {
+        question: "<meta> tegi qayerda ishlatiladi?",
+        options: ["Body", "Head", "Footer", "Rasm tagida"],
+        correctAnswer: 1,
+      },
+      // 19
+      {
+        question: "HTMLda qaysi teg oddiy matn sarlavhasini aniqlaydi?",
+        options: ["<h>", "<header>", "<h1>", "<head>"],
+        correctAnswer: 2,
+      },
+      // 20
+      {
+        question: "HTMLda qo'shimcha ma'lumotlarni ko'rsatish uchun qaysi teg ishlatiladi?",
+        options: ["<abbr>", "<details>", "<summary>", "Barchasi"],
+        correctAnswer: 3,
+      },
+      // 21
+      {
+        question: "HTML hujjatining asosiy qismi qaysi teg ichida yoziladi?",
+        options: ["<body>", "<main>", "<article>", "<section>"],
+        correctAnswer: 0,
+      },
+      // 22
+      {
+        question: "Qaysi teg matnning ustiga o'qib bo'lmaydigan qilib chizib qo'yadi?",
+        options: ["strike", "del", "text-decoration: line-through", "None"],
+        correctAnswer: 1,
+      },
+      // 23
+      {
+        question: "Faviconni HTMLga qanday qo'shish mumkin?",
+        options: ["<img> orqali", "<link> orqali", "<meta> orqali", "<title> orqali"],
+        correctAnswer: 1,
+      },
+      // 24
+      {
+        question: "<iframe> tegi nimani anglatadi?",
+        options: ["Rasmni qo'yish", "Hujjatni ichiga qo'yish", "Video yuklash", "Matn yozish"],
+        correctAnswer: 1,
+      },
+      // 25
+      {
+        question: "HTMLda <blockquote> tegining vazifasi nima?",
+        options: ["Matnni katta qilib ko'rsatish", "Iqtiboslarni ko'rsatish", "Havola yaratish", "Paragrafni ajratish"],
+        correctAnswer: 1,
+      },
+      // 26
+      {
+        question: "HTMLda qaysi atribut shaklning jo'natiladigan manzilini belgilaydi?",
+        options: ["action", "method", "enctype", "name"],
+        correctAnswer: 0,
+      },
+      // 27
+      {
+        question: "<strong> tegi HTMLda qanday vazifani bajaradi?",
+        options: ["Matnni chiroyli qilish", "Matnni muhimligini ko'rsatish", "Matnni yon tomonga egish", "Matnni ustiga chizish"],
+        correctAnswer: 1,
+      },
+      // 28
+      {
+        question: "HTMLda <dl> tegi nimani anglatadi?",
+        options: ["Belgili ro'yxat", "Ta'rifli ro'yxat", "Jadvalni sarlavhasi", "Shakl elementi"],
+        correctAnswer: 1,
+      },
+      // 29
+      {
+        question: "HTMLda qaysi atribut kiritilgan ma'lumotni cheklash uchun ishlatiladi?",
+        options: ["minlength", "maxlength", "size", "placeholder"],
+        correctAnswer: 1,
+      },
+      // 30
+      {
+        question: "HTMLda <mark> tegining vazifasi nima?",
+        options: ["Matnni belgilash (ajratib ko'rsatish)", "Matnni yashirish", "Matnni katta qilish", "Matnni bo'sh joy bilan ajratish"],
+        correctAnswer: 0,
+      },
+      // 31
+      {
+        question: "<nav> tegi HTMLda qanday maqsadda ishlatiladi?",
+        options: [" Sayt bo'ylab harakatlanish (navigatsiya)", "Matnni chiroyli ko'rsatish", "Videoni qo'yish", "Rasmlarni qo'shish"],
+        correctAnswer: 0,
+      },
+      // 32
+      {
+        question: "HTMLda <fieldset> tegi nima uchun ishlatiladi?",
+        options: ["Shaklni birlashtirish uchun", "Shakldagi elementlarni guruhlash uchun", "Ma'lumotlar bazasini ulash uchun", "Jadvalni sarlavhasini o'zgartirish uchun"],
+        correctAnswer: 1,
+      },
+      // 33
+      {
+        question: "HTMLda <legend> tegi qayerda ishlatiladi?",
+        options: ["<fieldset> ichida", "<form> ichida", "<table> ichida", "<section> ichida"],
+        correctAnswer: 0,
+      },
+      // 34
+      {
+        question: "Qaysi teg audio faylni HTML sahifasida qo'shadi?",
+        options: ["<audio>", "<sound>", "<music>", "<play>"],
+        correctAnswer: 0,
+      },
+        // 35
+      {
+        question: "HTMLda <canvas> tegi nimani anglatadi?",
+        options: ["Grafika chizish joyi", "Matnni o'zgartirish joyi", "Ma'lumotlar joyi", "Audio o'ynash"],
+        correctAnswer: 0,
+      },
+      // 36
+      {
+        question: "HTMLda qanday qilib tugmani yaratish mumkin?",
+        options: ["<btn>", "<button>", "<input>", "<click>"],
+        correctAnswer: 1,
+      },
+      // 37
+      {
+        question: "HTMLda atributlar qayerda yoziladi?",
+        options: ["Teg ichida", "Teg tashqarisida", "Body qismining ichida", "Faqat HTML5da mavjud"],
+        correctAnswer: 0,
+      },
+      // 38
+      {
+        question: "HTMLda giperhavola yaratish uchun qaysi teg ishlatiladi?",
+        options: ["<a>", "<link>", "<href>", "<nav>"],
+        correctAnswer: 0,
+      },
+      // 39
+      {
+        question: "<a> tegi uchun target='_blank' atributining vazifasi nima?",
+        options: ["Havolani shu sahifada yangilash", "Havolani yangi oynada ochish", "Havolani yashirish", "Havolani faqat mobil qurilmalarda ochish"],
+        correctAnswer: 1,
+      },
+      // 40
+      {
+        question: "HTMLda sahifa ichidagi ma'lum bir joyga havola qilish uchun nima ishlatiladi?",
+        options: ['<a href="#id">', '<a id="id">', '<a link="id">', '<a name="id">'],
+        correctAnswer: 0,
+      },
+      // 41
+      {
+        question: "<link> tegi odatda nimani belgilash uchun ishlatiladi?",
+        options: ["Sahifadagi havolani", "Tashqi resursni ulash", "Matnni qalin qilish", "JavaScript fayllarni ulash"],
+        correctAnswer: 1,
+      },
+      // 42
+      {
+        question: "Tashqi CSS faylni ulash uchun qaysi teg ishlatiladi?",
+        options: ["<style>", "<link>", "<a>", "<css>"],
+        correctAnswer: 1,
+      },
+        // 43
+      {
+        question: "Media querylar qaysi CSS qoidasi uchun ishlatiladi?",
+        options: ["Statik dizaynni yaratish uchun", "Sahifani bosib chiqarish uchun", "Turli qurilmalar uchun moslashuvchan dizayn yaratish uchun", "Matnni qalin qilish uchun"],
+        correctAnswer: 2,
+      },
+      // 44
+      {
+        question: "Quyidagi media query qaysi ekran uchun ishlatiladi?@media (max-width: 768px) { ... } ",
+        options: ["Stol kompyuterlari", "Printerlar", "Televizorlar", "Mobil qurilmalar"],
+        correctAnswer: 3,
+      },
+        
+
     ],
   },
 
   {
-    category: "geography",
+    category: "CSS",
     questions: [
       {
         question: "Which is the longest river in the world?",
@@ -144,7 +405,7 @@ const questions = [
   },
 
   {
-    category: "mathematics",
+    category: "JavaScript",
     questions: [
       {
         question: "What is the square root of 144?",
@@ -275,7 +536,7 @@ const questions = [
   },
 
   {
-    category: "entertainment",
+    category: "Umumiy",
     questions: [
       {
         question: "Who won the Academy Award for Best Actor in 2022?",

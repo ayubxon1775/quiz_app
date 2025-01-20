@@ -6,10 +6,10 @@ const questionStatus = document.querySelector('.question-status');
 const timerDisplay = document.querySelector('.time-duration');
 const resultContainer = document.querySelector('.result-container')
 
-const QUIZ_TIME_LIMIT = 15;
+const QUIZ_TIME_LIMIT = 20;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
-let quizCategory = 'programming';
+let quizCategory = 'HTML';
 let numberOfQuestions = 5;
 let currentQuestion = null;
 const questionsIndexHistory = [];
@@ -20,7 +20,7 @@ const showQuizResult = () => {
   quizContainer.style.display = 'none';
   resultContainer.style.display = 'block';
 
-  const resultText = `You answered <b>${correctAnswersCount} </b> out of <b>${numberOfQuestions} </b>questions correctly. Great effect`
+  const resultText = `<b>${numberOfQuestions} </b> savoldan <b>${correctAnswersCount} </b> tasiga to'g'ri javob berdingiz `
   document.querySelector('.result-message').innerHTML = resultText;
 
 }
@@ -110,7 +110,7 @@ const renderQuestion = () => {
   quizContainer.querySelector('.quiz-timer').style.background ='#32313c'
   document.querySelector('.question-text').textContent = currentQuestion.question;
   questionStatus.innerHTML = `
-  <b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`
+  <b>${questionsIndexHistory.length}</b> savol <b>${numberOfQuestions}</b> dan`
 
 
   // Create option <li> elements and append them, and add click event listeners
