@@ -119,11 +119,7 @@ const questions = [
         correctAnswer: 2,
       },
       // 20
-      {
-        question: "HTMLda qo'shimcha ma'lumotlarni ko'rsatish uchun qaysi teg ishlatiladi?",
-        options: ["<abbr>", "<details>", "<summary>", "Barchasi"],
-        correctAnswer: 3,
-      },
+      
       // 21
       {
         question: "HTML hujjatining asosiy qismi qaysi teg ichida yoziladi?",
@@ -146,14 +142,10 @@ const questions = [
       {
         question: "<iframe> tegi nimani anglatadi?",
         options: ["Rasmni qo'yish", "Hujjatni ichiga qo'yish", "Video yuklash", "Matn yozish"],
-        correctAnswer: 1,
+        correctAnswer: 2,
       },
       // 25
-      {
-        question: "HTMLda <blockquote> tegining vazifasi nima?",
-        options: ["Matnni katta qilib ko'rsatish", "Iqtiboslarni ko'rsatish", "Havola yaratish", "Paragrafni ajratish"],
-        correctAnswer: 1,
-      },
+     
       // 26
       {
         question: "HTMLda qaysi atribut shaklning jo'natiladigan manzilini belgilaydi?",
@@ -167,11 +159,7 @@ const questions = [
         correctAnswer: 1,
       },
       // 28
-      {
-        question: "HTMLda <dl> tegi nimani anglatadi?",
-        options: ["Belgili ro'yxat", "Ta'rifli ro'yxat", "Jadvalni sarlavhasi", "Shakl elementi"],
-        correctAnswer: 1,
-      },
+      
       // 29
       {
         question: "HTMLda qaysi atribut kiritilgan ma'lumotni cheklash uchun ishlatiladi?",
@@ -208,7 +196,7 @@ const questions = [
         options: ["<audio>", "<sound>", "<music>", "<play>"],
         correctAnswer: 0,
       },
-        // 35
+      // 35
       {
         question: "HTMLda <canvas> tegi nimani anglatadi?",
         options: ["Grafika chizish joyi", "Matnni o'zgartirish joyi", "Ma'lumotlar joyi", "Audio o'ynash"],
@@ -256,7 +244,7 @@ const questions = [
         options: ["<style>", "<link>", "<a>", "<css>"],
         correctAnswer: 1,
       },
-        // 43
+      // 43
       {
         question: "Media querylar qaysi CSS qoidasi uchun ishlatiladi?",
         options: ["Statik dizaynni yaratish uchun", "Sahifani bosib chiqarish uchun", "Turli qurilmalar uchun moslashuvchan dizayn yaratish uchun", "Matnni qalin qilish uchun"],
@@ -264,8 +252,8 @@ const questions = [
       },
       // 44
       {
-        question: "Quyidagi media query qaysi ekran uchun ishlatiladi?@media (max-width: 768px) { ... } ",
-        options: ["Stol kompyuterlari", "Printerlar", "Televizorlar", "Mobil qurilmalar"],
+        question: "Quyidagi media query qaysi ekran uchun ishlatiladi?@media (max-width: 480px) { ... } ",
+        options: ["kompyuterlar", "Printerlar", "planshetlar", "Mobil qurilmalar"],
         correctAnswer: 3,
       },
         
@@ -276,131 +264,242 @@ const questions = [
   {
     category: "CSS",
     questions: [
+      // 1
       {
-        question: "Which is the longest river in the world?",
-        options: ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known as the Land of the Rising Sun?",
-        options: ["China", "South Korea", "Japan", "Thailand"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the largest ocean in the world?",
-        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which country has the largest population in the world?",
-        options: ["India", "China", "United States", "Indonesia"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known for the Great Barrier Reef?",
-        options: ["Australia", "United States", "South Africa", "New Zealand"],
+        question: "CSS qaysi maqsadda ishlatiladi?",
+        options: ['HTML hujjatiga stil berish uchun', 'JavaScriptni bajarish uchun', 'Brauzerda fayllarni yuklash uchun', 'Boshqa saytlardan havola olish uchun'],
         correctAnswer: 0,
       },
+      // 2
       {
-        question: "Which is the smallest country in the world?",
-        options: ["Monaco", "Liechtenstein", "Vatican City", "San Marino"],
-        correctAnswer: 2,
+        question: "Inline CSS qanday ishlatiladi?",
+        options: ['<style> tegi ichida', 'HTML teglari uchun style atributida', '.css faylida', '<link> orqali'],
+        correctAnswer: 1,
       },
+      // 3
       {
-        question: "Which is the tallest mountain in the world?",
-        options: ["K2", "Mount Kilimanjaro", "Mount Everest", "Mount Fuji"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the capital of Canada?",
-        options: ["Ottawa", "Toronto", "Vancouver", "Montreal"],
+        question: "CSS qoidasi qanday tuziladi?",
+        options: ['<selector> { property: value; }', '<selector> { value: property; }', '{ selector: property; value;}', '{ value: selector; property; }'],
         correctAnswer: 0,
       },
+      // 4
       {
-        question: "Which desert is the largest hot desert in the world?",
-        options: ["Gobi Desert", "Atacama Desert", "Sahara Desert", "Karakum Desert"],
+        question: "Quyidagi kodni ko‘rib chiqing, nima noto‘g‘ri?  body {background-color blue;}",
+        options: ['body noto‘g‘ri selector ishlatilgan', 'Property ishlatilmagan', 'Property va qiymat orasida : yetishmaydi', 'Tugatilmagan ; belgisi bor'],
         correctAnswer: 2,
       },
+      // 5
       {
-        question: "Which country is known as the Land of the Midnight Sun?",
-        options: ["Sweden", "Finland", "Norway", "Denmark"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the longest mountain range in the world?",
-        options: ["Himalayas", "Rocky Mountains", "Andes", "Alps"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which river flows through Egypt?",
-        options: ["Amazon River", "Yangtze River", "Nile River", "Ganges River"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which is the largest island in the world?",
-        options: ["Greenland", "New Guinea", "Borneo", "Madagascar"],
+        question: "CSS qoidalarining ustuvorligi qanday tartibda?",
+        options: ['Inline CSS > Ichki CSS > Tashqi CSS', 'Tashqi CSS > Ichki CSS > Inline CSS', 'Inline CSS > Tashqi CSS > Ichki CSS', 'Ichki CSS > Inline CSS > Tashqi CSS'],
         correctAnswer: 0,
       },
+      // 6
       {
-        question: "What is the capital of Japan?",
-        options: ["Beijing", "Seoul", "Tokyo", "Hong Kong"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which country has the most time zones?",
-        options: ["United States", "Russia", "Canada", "Australia"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known for the Eiffel Tower?",
-        options: ["Germany", "Italy", "Spain", "France"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which is the most populous city in the world?",
-        options: ["Tokyo", "Shanghai", "New York City", "Delhi"],
+        question: "Matnni qalin qilish uchun qaysi property ishlatiladi?",
+        options: ['font-weight', 'font-style', 'font-size', 'text-style'],
         correctAnswer: 0,
       },
+      // 7
       {
-        question: "Which mountain range is located in South America?",
-        options: ["Himalayas", "Rocky Mountains", "Appalachian Mountains", "Andes"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which continent is known as the 'Dark Continent'?",
-        options: ["Asia", "Africa", "South America", "Europe"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the capital of Brazil?",
-        options: ["Buenos Aires", "Rio de Janeiro", "Brasília", "Sao Paulo"],
+        question: "Matnni markazga yo‘naltirish uchun qaysi property ishlatiladi?",
+        options: ['align-content', 'justify-text', 'text-align', 'center-text'],
         correctAnswer: 2,
       },
+      // 8
       {
-        question: "What is the official language of Brazil?",
-        options: ["Spanish", "English", "Portuguese", "French"],
-        correctAnswer: 2,
+        question: "Quyidagilardan qaysi biri shrift o‘lchamini o‘rnatadi?",
+        options: ['font-size', 'font-height', 'text-height', 'text-size'],
+        correctAnswer: 0,
       },
+      // 9
       {
-        question: "Which country has the most volcanoes?",
-        options: ["Japan", "Indonesia", "United States", "Italy"],
+        question: "Matnga chiziq chizish uchun qaysi property ishlatiladi?",
+        options: ['text-decoration', 'text-line', 'line-decoration', 'line-through'],
+        correctAnswer: 0,
+      },
+      // 10
+     
+      // 11
+       {
+        question: "CSSda padding nima qiladi?",
+        options: ['Tashqi bo‘shliqni belgilaydi', 'Ichki bo‘shliqni belgilaydi', 'Chegarani belgilaydi', 'Rasmni kengaytiradi'],
         correctAnswer: 1,
       },
+      // 12
       {
-        question: "Which city is known as the Big Apple?",
-        options: ["Los Angeles", "New York City", "Chicago", "San Francisco"],
+        question: "Borderning kengligini belgilash uchun qaysi property ishlatiladi?",
+        options: ['border-size', 'border-width', 'border-style', 'border-height'],
         correctAnswer: 1,
       },
+      // 13
       {
-        question: "Which ocean is located to the east of Africa?",
-        options: ["Indian Ocean", "Pacific Ocean", "Southern Ocean", "Atlantic Ocean"],
+        question: "Elementga qo‘shimcha tashqi bo‘shliq berish uchun qaysi property ishlatiladi?",
+        options: ['margin', 'padding', 'border', 'gap'],
+        correctAnswer: 0,
+      },
+      // 14
+      {
+        question: "Qaysi property yordamida elementning kengligi belgilanadi?",
+        options: ['max-width', 'content-width', 'outer-width', 'width'],
         correctAnswer: 3,
       },
+      // 15
       {
-        question: "Which is the second largest continent by area?",
-        options: ["Asia", "Africa", "North America", "Europe"],
+        question: "Quyidagi borderni belgilash uchun to‘g‘ri kodni toping: Qalin, qizil, chiziqli.",
+        options: ['border: solid red 5px;', 'border: red solid 5px;', 'border: 5px solid red;', 'border: 5px red solid;'],
+        correctAnswer: 2,
+      },
+      // 16
+      {
+        question: "Elementning fon rangi uchun qaysi property ishlatiladi?",
+        options: ['color', 'background', 'background-color', 'color-background'],
+        correctAnswer: 2,
+      },
+      // 17
+      {
+        question: "Quyidagi kod nima qiladi? color: #ffffff;",
+        options: ['Matnni qora rangga o‘zgartiradi', 'Matnni oq rangga o‘zgartiradi', 'Matnni shaffof qiladi', 'Matn rangini o‘zgartirmaydi'],
         correctAnswer: 1,
       },
+      // 18
+      {
+        question: "RGBAda alfa nimani ifodalaydi?",
+        options: ['Rang darajasini', 'Rang shaffofligini', 'Rang kontrastini', 'Rang hajmini'],
+        correctAnswer: 1,
+      },
+      // 19
+      {
+        question: "Fonga rasm qo‘shish uchun qaysi property ishlatiladi?",
+        options: ['background-image', 'background-picture', 'image-background', 'picture-background'],
+        correctAnswer: 0,
+      },
+      // 20
+      {
+        question: "Gradients uchun to‘g‘ri sintaksisni toping:",
+        options: ['background-color: gradient(to right, red, blue);', 'background: linear-gradient(to right, red, blue);', 'gradient: linear-gradient(to right, red, blue);', 'color-gradient: linear-gradient(to right, red, blue);'],
+        correctAnswer: 1,
+      },
+        // 21
+      {
+        question: "Flexboxda asosiy o‘qni belgilash uchun qaysi property ishlatiladi?",
+        options: ['flex-direction', 'justify-content', 'align-items', 'order'],
+        correctAnswer: 0,
+      },
+      // 22
+      {
+        question: "Flexboxda joylashishni markazlashtirish uchun to‘g‘ri kodni toping: display: flex; justify-content: center; align-items: ____ ; ",
+        options: ['flex-start', 'center', 'baseline', 'flex-end'],
+        correctAnswer: 1,
+      },
+      // 23
+      {
+        question: "Grid tizimida qatorlar orasidagi bo‘shliqni belgilash uchun qaysi property ishlatiladi?",
+        options: ['grid-gap', 'row-gap', 'column-gap', 'grid-template-gap'],
+        correctAnswer: 1,
+      },
+      // 24
+      {
+        question: "Quyidagi kodda nima noto‘g‘ri? display: grid; grid-template-columns: 100px, 200px",
+        options: ['grid-template-columns noto‘g‘ri ishlatilgan', ', o‘rniga (bo‘sh joy) ishlatilishi kerak', 'Kengliklar noto‘g‘ri', 'Grid faollashtirilmagan'],
+        correctAnswer: 1,
+      },
+      // 25
+      {
+        question: "Flexboxda elementlarni asosiy o‘q bo‘ylab bo‘lish uchun qaysi property ishlatiladi?",
+        options: ['align-content', 'align-items', 'justify-content', 'flex-grow'],
+        correctAnswer: 2,
+      },
+      // 26
+      {
+        question: "Static pozitsiya nima?",
+        options: ['Elementning standart pozitsiyasi', 'Elementni absolyut joylashuvga o‘tkazadi', 'Elementni boshqa joyga siljitadi', 'Elementni markazlashtiradi'],
+        correctAnswer: 1,
+      },
+      // 27
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 28
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 29
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 30
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+       // 31
+       {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 32
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 33
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 34
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 35
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 36
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 37
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 38
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 39
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },
+      // 40
+      {
+        question: "",
+        options: ['', '', '', ''],
+        correctAnswer: 1,
+      },  
     ],
   },
 
