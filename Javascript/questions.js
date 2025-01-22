@@ -499,7 +499,260 @@ const questions = [
         question: "Quyidagi kod nima uchun ishlatiladi? @media (orientation: landscape) { body {font-size: 18px;} }",
         options: ["Portret rejimida shrift o'lchamini o'zgartirish uchun", "Landshaft rejimida shrift o'lchamini o'zgartirish uchun", "Barcha qurilmalar uchun shrift o'lchamini belgilash uchun", "Landshaft rejimida fon rangini o'zgartirish uchun"],
         correctAnswer: 1,
-      },  
+      }, 
+      // 41
+       {
+        question: "Matnni qaysi property yordamida o'rtaga joylashtirish mumkin?",
+        options: ["align-text", "text-align", "text-center", "text-position"],
+        correctAnswer: 1,
+      }, 
+       // 42
+      {
+        question: "Matn ostiga chiziq chizish uchun qaysi property ishlatiladi?",
+        options: ["text-line", "line-style", "underline", "text-decoration"],
+        correctAnswer: 3,
+      },
+      // 43
+      {
+        question: "Matnning harflar orasidagi bo'shliqni qanday property bilan sozlash mumkin?",
+        options: ["text-spacing", "letter-spacing", "word-spacing", "text-spacing-horizontal"],
+        correctAnswer: 1,
+      },
+      // 44
+      {
+        question: "Quyidagi kod nima qiladi? font-weight: bold;",
+        options: ["Shriftni ingichka qiladi", "Shrift rangini o'zgartiradi", "Matnni kursivga o'zgartiradi", "Shriftni qalin qiladi"],
+        correctAnswer: 3,
+      },
+      // 45
+      {
+        question: "Shriftning hajmini qanday property bilan o'zgartirish mumkin?",
+        options: ["text-size", "font-size", "font-weight", "text-font"],
+        correctAnswer: 1,
+      }, 
+       // 46
+      {
+        question: "padding nima uchun ishlatiladi?",
+        options: ["Elementlar orasidagi bo'shliqni sozlash uchun", "Element va uning chegarasi orasidagi bo'shliqni sozlash uchun", "Element hajmini o'zgartirish uchun", "Rangni o'zgartirish uchun"],
+        correctAnswer: 1,
+      },
+      // 47
+      {
+        question: "margin va padding orasidagi farq nima?",
+        options: ["margin elementning ichki bo'shlig‘ini sozlaydi, padding tashqi bo‘shliqni sozlaydi", "margin tashqi bo‘shliqni sozlaydi, padding ichki bo‘shliqni sozlaydi", "Ikkalasi ham bir xil vazifani bajaradi", "Faqat biri ishlatiladi"],
+        correctAnswer: 1,
+      },
+      // 48
+      {
+        question: "Elementga chegarani qo‘shish uchun qaysi property ishlatiladi?",
+        options: ["border", "border-size", "margin", "padding"],
+        correctAnswer: 0,
+      }, 
+     // 49
+     {
+      question: "Quyidagi kod nima qiladi? margin: 10px 20px 30px 40px;",
+      options: ["Hamma tomonga 10px bo'shliq beradi", "Yuqoriga 10px, o'ngga 20px, pastga 30px, chapga 40px bo'shliq beradi", "O‘ng va chapga 20px, yuqori va pastga 10px bo‘shliq beradi", "O‘ng va chapga 40px, yuqori va pastga 30px bo‘shliq beradi"],
+      correctAnswer: 1,
+    },
+    // 50
+    {
+      question: "Elementning kengligini hisoblashda box-sizing: border-box; qanday ta’sir ko‘rsatadi?",
+      options: ["Faqat content hajmini hisoblaydi", "Kenglikni hisoblashda padding va borderni ham qo‘shadi", "Faqat borderni hisoblaydi", "Element hajmini o‘zgartirmaydi"],
+      correctAnswer: 1,
+    },
+   // 51
+   {
+    question: "Element fon rangini o'zgartirish uchun qaysi property ishlatiladi?",
+    options: ["background-color", "color", "background", "font-color"],
+    correctAnswer: 0,
+  }, 
+   // 52
+  {
+    question: "rgba(255, 0, 0, 0.5) kodi nimani bildiradi?",
+    options: ["To‘q qizil rangni", "Oq rangni shaffof holda", "Qizil rangni 50% shaffoflik bilan", "Rangni o‘zgartirmaydi"],
+    correctAnswer: 2,
+  },
+  // 53
+  {
+    question: "Element uchun tasvirni fon sifatida o‘rnatish qaysi property orqali amalga oshiriladi?",
+    options: ["background-image", "background", "image", "img-bg"],
+    correctAnswer: 0,
+  },
+  // 54
+  {
+    question: "Quyidagi kod nima qiladi? background-repeat: no-repeat;",
+    options: ["Fon rasmni takrorlaydi", "Fon rasmni takrorlamaydi", "Har bir element uchun alohida fon rasm yaratadi", "Faqat teksturali fon rasm ishlatiladi"],
+    correctAnswer: 1,
+  },
+  // 55
+  {
+    question: "Quyidagi background-position: center center; kodi nimani anglatadi?",
+    options: ["Fon rasmini markazga joylashtiradi", "Rasmlarni o‘ngga joylashtiradi", "Fonni yuqoriga joylashtiradi", "Rasmlarni chapga joylashtiradi"],
+    correctAnswer: 0,
+  }, 
+   // 56
+  {
+    question: "background-attachment: fixed; qanday maqsadda ishlatiladi?",
+    options: ["Fon rasmini ekranda harakatsiz qiladi", "Fon rasmini harakatlantiradi", "Element ichida faqat tasvir joylashtiradi", "Shrift rangini o'zgartiradi"],
+    correctAnswer: 0,
+  },
+  // 57
+  {
+    question: "Elementni aylantirish uchun qaysi property ishlatiladi?",
+    options: ["rotate", "animation", "transform", "transition"],
+    correctAnswer: 2,
+  },
+  // 58
+  {
+    question: "Quyidagi kod nima qiladi? transform: scale(1.5);",
+    options: ["Elementni siljitadi", "Elementni aylanadi", "Elementni kichiklashtiradi", "Elementni kattalashtiradi"],
+    correctAnswer: 3,
+  }, 
+ // 59
+ {
+  question: "Animatsiya davomiyligini o‘rnatish uchun qaysi property ishlatiladi?",
+  options: ["animation-speed", "transition-time", "animation-duration", "animation-timing"],
+  correctAnswer: 2,
+},
+// 60
+{
+  question: "@keyframes nimani ifodalaydi?",
+  options: ["Matnlarni joylashtirish qoidasi", "Animatsiya bosqichlarini belgilash qoidasi", "Ranglar o‘zgarishini belgilaydi", "Faqat transformatsiyalarni belgilaydi"],
+  correctAnswer: 1,
+}, 
+// 61
+{
+  question: "Quyidagi kodda animatsiya qaysi yo‘nalishda ishlaydi? animation-direction: reverse;",
+  options: ["Oddiy yo‘nalishda", "Teskarisiga", "Har ikki yo‘nalishda", "Faqat bitta marta"],
+  correctAnswer: 1,
+}, 
+ // 62
+{
+  question: "Flexboxning asosiy o‘qi qanday belgilanadi?",
+  options: ["justify-content", "align-items", "flex-direction", "display"],
+  correctAnswer: 2,
+},
+// 63
+{
+  question: "Flex konteyner ichidagi elementlarni o‘rtaga joylashtirish uchun qaysi property ishlatiladi?",
+  options: ["align-items: center;", "justify-content: center;", "a va b javob to'g'ri", "flex-wrap: center;"],
+  correctAnswer: 2,
+},
+// 64
+{
+  question: "Quyidagi kod nima qiladi? flex-wrap: wrap;",
+  options: ["Elementlarni o‘ramaydi", "Elementlarni yangi qatorga o‘tkazadi", "Elementlarni bir qatorga joylashtiradi", "Faqat katta ekranlar uchun ishlaydi"],
+  correctAnswer: 1,
+},
+// 65
+{
+  question: "Flexboxda asosiy o‘q bo‘yicha bo‘shliqni qanday sozlash mumkin?",
+  options: ["justify-content", "align-content", "flex-direction", "order"],
+  correctAnswer: 0,
+}, 
+ // 66
+{
+  question: "Flex element tartibini o‘zgartirish uchun qaysi property ishlatiladi?",
+  options: ["order", "z-index", "align-items", "position"],
+  correctAnswer: 0,
+},
+// 67
+{
+  question: "Grid tizimini yoqish uchun qaysi property ishlatiladi?",
+  options: ["grid-align", "grid-template", "display: flex;", "display: grid;"],
+  correctAnswer: 3,
+},
+// 68
+{
+  question: "grid-template-columns nima qiladi?",
+  options: ["Ustunlar sonini belgilaydi", "Qatorlar sonini belgilaydi", "Ranglarni belgilaydi", "Elementlar o‘rtasidagi bo‘shliqni belgilaydi"],
+  correctAnswer: 0,
+}, 
+// 69
+{
+question: "Grid elementlarni joylashtirish uchun qaysi property ishlatiladi?",
+options: ["grid-column va grid-row", "justify-content va align-items", "order va z-index", "grid-index"],
+correctAnswer: 0,
+},
+// 70
+{
+question: "Quyidagi kod nima qiladi? grid-gap: 10px;",
+options: ["Faqat ustunlar orasiga 10px qo‘shadi", "Qatorlar orasiga 10px qo‘shadi", "Grid elementlari orasiga 10px bo‘shliq qo‘shadi", "Bo‘shliqni o‘zgartirmaydi"],
+correctAnswer: 2,
+},
+// 71
+{
+question: "Grid tizimida elementni ikkita ustunni egallash uchun qanday yoziladi? grid-column: 1 / 3;",
+options: ["1-ustun va 3-ustun o'rtasida joylashadi", "Faqat 1-ustunni egallaydi", "1 va 2-ustunlarni egallaydi", "Faqat 3-ustunni egallaydi"],
+correctAnswer: 2,
+}, 
+// 72
+{
+question: "grid-auto-rows nima uchun ishlatiladi?",
+options: ["Avtomatik ustun kengligini belgilaydi", "Avtomatik qator balandligini belgilaydi", "Ustun va qatorlar o'rtasidagi bo‘shliqni belgilaydi", "Elementlarni tartiblaydi"],
+correctAnswer: 1,
+},
+// 73
+{
+question: "Grid elementlarni asosiy o‘q bo‘yicha o‘rtalash uchun qaysi property ishlatiladi?",
+options: ["justify-content", "align-content", "grid-gap", "grid-area"],
+correctAnswer: 0,
+},
+// 74
+{
+question: 'Quyidagi kod qaysi maqsadda ishlatiladi? grid-template-areas:"header header""sidebar content""footer footer";',
+options: ["Elementlar o‘rtasidagi bo‘shliqni belgilash", "Flex elementlarini tartibga solish", "Grid maydonlarini belgilash", "Rasm joylashtirish"],
+correctAnswer: 2,
+},
+// 75
+{
+question: "Elementni grid maydoni ichida qanday qilib joylashtiramiz?",
+options: ["grid-area", "grid-align", "order", "grid-gap"],
+correctAnswer: 0,
+}, 
+// 76
+{
+question: "Media qoidasi yordamida ekran kengligini qanday belgilash mumkin?",
+options: ["@media (max-width: 768px)", "@screen (max-width: 768px)", "@responsive (768px)", "@device (768px)"],
+correctAnswer: 0,
+},
+// 77
+{
+question: "Quyidagi kod nima qiladi? @media (min-width: 1024px) { body { background-color: lightblue; } }",
+options: ["Rasmni o‘zgartiradi", "Har qanday ekranda fon rangini o‘zgartiradi", "Faqat kichik ekranlar uchun fon rangini o‘zgartiradi", "1024px va undan katta ekranlar uchun fon rangini o‘zgartiradi"],
+correctAnswer: 3,
+},
+// 78
+{
+question: 'Quyidagi kodda viewport nimani anglatadi? <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+options: ["Rasm kengligi", "Matn hajmi", "Brauzerning ko‘rish maydoni kengligi va kattalashuvi", "Veb-sayt fon rangi"],
+correctAnswer: 2,
+}, 
+// 79
+{
+question: "Media qoidalar yordamida bir qatorni ustunlarga aylantirish qaysi property bilan amalga oshiriladi?",
+options: ["display: grid;", "grid-auto-flow: row;", "flex-direction: column;", "align-content: center;"],
+correctAnswer: 2,
+},
+// 80
+{
+question: "Quyidagi kod nima qiladi? transition: all 0.3s ease-in-out;",
+options: ["Faqat ranglarni o‘zgartiradi", "Rasmni aylantiradi", "Barcha o‘zgarishlarni 0.3 soniyada amalga oshiradi", "Tekstni o‘zgartiradi"],
+correctAnswer: 2,
+},   
+// 81
+{
+  question: "Quyidagi kodda transition qaysi element uchun ishlaydi? transition-property: background-color;",
+  options: ["Bo‘shliq o‘zgarishida", "Margin o‘zgarishida", "Shrift o‘lchamida", "Fon rangi o‘zgarishida"],
+  correctAnswer: 3,
+}, 
+ // 82
+{
+  question: "CSS transition davomiyligini sozlash uchun qaysi property ishlatiladi?",
+  options: ["transition-duration", "transition-time", "animation-duration", "transition-speed"],
+  correctAnswer: 0,
+},
+
     ],
   },
 
