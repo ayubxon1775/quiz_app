@@ -414,90 +414,90 @@ const questions = [
       {
         question: "Static pozitsiya nima?",
         options: ['Elementning standart pozitsiyasi', 'Elementni absolyut joylashuvga o‘tkazadi', 'Elementni boshqa joyga siljitadi', 'Elementni markazlashtiradi'],
-        correctAnswer: 1,
+        correctAnswer: 0,
       },
       // 27
       {
-        question: "",
-        options: ['', '', '', ''],
+        question: "position: relative qaysi holatda ishlatiladi?",
+        options: ['Elementni boshqa elementga nisbatan joylashtirish uchun', 'Elementni standart joylashtirish uchun', 'Elementni asosiy o‘qqa bog‘lash uchun', 'Elementni boshqa elementdan ajratish uchun'],
         correctAnswer: 1,
       },
       // 28
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "z-index qaysi maqsadda ishlatiladi?",
+        options: ['Elementni boshqa element ustiga yoki ostiga joylashtirish uchun', 'Elementni markazlashtirish uchun', 'Rangni o‘zgartirish uchun', 'Elementning kengligini o‘zgartirish uchun'],
+        correctAnswer: 0,
       },
       // 29
       {
-        question: "",
-        options: ['', '', '', ''],
+        question: "Quyidagi kodda element qayerda joylashadi? position:fixed; top:10px; left:20px;",
+        options: ['Sahifaning yuqori chap burchagida', 'Brauzerning yuqori chap burchagida', 'O‘rtada joylashadi', 'Hech qayerda ko‘rinmaydi'],
         correctAnswer: 1,
       },
       // 30
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "absolute pozitsiyadagi element qaysi elementga nisbatan joylashadi?",
+        options: ['relative bo‘lgan eng yaqin ajdodga', 'Hujjatning yuqori chap burchagiga', 'Brauzerning chap burchagiga', 'Har doim boshqa elementga bog‘liq emas'],
+        correctAnswer: 0,
       },
        // 31
        {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "Elementni aylantirish uchun qaysi property ishlatiladi?",
+        options: ['transform', 'rotate', 'translate', 'scale'],
+        correctAnswer: 0,
       },
       // 32
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "Transformlar qaysi birliklarda ishlaydi?",
+        options: ['Pixel yoki foiz', 'Faqat foiz', 'Gradus (deg), px, foiz', 'Faqat pixel'],
+        correctAnswer: 2,
       },
       // 33
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "CSS animatsiya yaratish uchun qaysi qoida ishlatiladi?",
+        options: ['@animation', '@transition', '@transform', '@keyframes'],
+        correctAnswer: 3,
       },
       // 34
       {
-        question: "",
-        options: ['', '', '', ''],
+        question: "CSSda animatsiya davomiyligini belgilash uchun qaysi property ishlatiladi?",
+        options: ['animation-time', 'animation-duration', 'transition-time', 'duration'],
         correctAnswer: 1,
       },
       // 35
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "transition qachon ishlatiladi?",
+        options: ['Bir elementdan boshqasiga o‘tishda', 'Elementni pozitsiyalash uchun', 'Faqat hover effekti uchun', 'Elementlar ustida o‘tish animatsiyalarini yaratish uchun'],
+        correctAnswer: 3,
       },
       // 36
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "Media query qanday maqsadda ishlatiladi?",
+        options: ["Faqat ranglarni o'zgartirish uchun", "Faqat shrift o'lchamlarini belgilash uchun", "Har xil ekran o'lchamlari uchun stil yozish uchun", 'Animatsiyalar yaratish uchun'],
+        correctAnswer: 2,
       },
       // 37
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "Quyidagi kod nima qiladi? @media (max-width: 768px) { body  {background-color: lightblue; }}",
+        options: ["Ekran kengligi 768px yoki kichik bo'lsa, fonni och ko‘k rangga o‘zgartiradi", "Ekran kengligi faqat 768px bo'lganda fonni o'zgartiradi", "Har doim fonni o'zgartiradi", "Ekran kengligi 768px dan katta bo'lsa, fonni o'zgartiradi"],
+        correctAnswer: 0,
       },
       // 38
       {
-        question: "",
-        options: ['', '', '', ''],
+        question: "Quyidagi media query uchun to‘g‘ri sintaksisni toping:",
+        options: ['@media (max-screen: 500px)', '@media (max-width: 500px)', '@media [max-width: 500px]', '@media {max-width: 500px}'],
         correctAnswer: 1,
       },
       // 39
       {
-        question: "",
-        options: ['', '', '', ''],
-        correctAnswer: 1,
+        question: "@media (min-width: 1200px) kodi nimani anglatadi?",
+        options: ['Ekran kengligi 1200px dan kichik bo‘lsa, kod ishlaydi', 'Faqat mobil qurilmalar uchun ishlaydi', 'Har doim ishlaydi', 'Ekran kengligi 1200px dan katta yoki teng bo‘lsa, kod ishlaydi'],
+        correctAnswer: 3,
       },
       // 40
       {
-        question: "",
-        options: ['', '', '', ''],
+        question: "Quyidagi kod nima uchun ishlatiladi? @media (orientation: landscape) { body {font-size: 18px;} }",
+        options: ["Portret rejimida shrift o'lchamini o'zgartirish uchun", "Landshaft rejimida shrift o'lchamini o'zgartirish uchun", "Barcha qurilmalar uchun shrift o'lchamini belgilash uchun", "Landshaft rejimida fon rangini o'zgartirish uchun"],
         correctAnswer: 1,
       },  
     ],
