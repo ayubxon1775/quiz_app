@@ -949,304 +949,304 @@ correctAnswer: 2,
   },
   // 31
   {
-    question: "",
-    options: ["", "", "", ""],
-    correctAnswer: 1,
+    question: "Quyidagi kodning natijasi nima bo'ladi? let x = 10; x++; console.log(x);",
+    options: ["9", "10", "11", "Xato"],
+    correctAnswer: 2,
   },
  // 32
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "parseInt('123.45') natijasi nima bo'ladi?",
+  options: ["123", "123.45", "NaN", "124"],
+  correctAnswer: 0,
 }
 ,
 // 33
  {
-  question: "",
-  options: ["", "", "", ""],
+  question: "== operatori nima qiladi?",
+  options: ["Qiymat va turini taqqoslaydi", "Faqat qiymatni taqqoslaydi", "Faqat turini taqqoslaydi", "Ikkalasini teng qilishga harakat qiladi"],
   correctAnswer: 1,
 },
  // 34
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "JavaScriptda ob'ektni nusxalash uchun qaysi metod ishlatiladi?",
+  options: ["copy()", "clone()", "Object.assign()", "Object.copy()"],
+  correctAnswer: 2,
 }
 ,
 // 35
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "JavaScriptda undefined qiymati nima anglatadi?",
+  options: ["O'zgaruvchi qiymati berilmaganligini bildiradi", "Xato xabarini bildiradi", "Funksiya natijasining yo'qligini bildiradi", "Hech narsa anglatmaydi"],
+  correctAnswer: 0,
 },
  // 36
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "typeof '123'",
+  options: ["string", "number", "object", "undefined"],
+  correctAnswer: 0,
 }
 ,
 // 37
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "Massivdagi elementlarni saralash uchun qaysi metod ishlatiladi?",
+  options: ["filter()", "map()", "sort()", "reduce()"],
+  correctAnswer: 2,
 },
  // 38
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "let va var o'rtasidagi asosiy farq nima?",
+  options: ["let faqat funksiya ichida ishlaydi", "Hech qanday farqi yo'q", "let faqat massivlar uchun ishlatiladi", "var global doirada ishlaydi, let esa blok doirasida"],
+  correctAnswer: 3,
 }
 ,
 // 39
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "JSON.stringify() nima qiladi?",
+  options: ["Ma'lumotni tahlil qiladi", "Ob'ektni JSONga o'zgartiradi", "JSON ob'ektni massivga aylantiradi", "JSON ob'ektni satrga aylantiradi"],
+  correctAnswer: 3,
 },
 // 40
  {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "Massivning boshidan elementni olib tashlash uchun qaysi metod ishlatiladi?",
+  options: ["splice()", "pop()", "shift()", "unshift()"],
+  correctAnswer: 2,
 },      
 // 41
 {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "Funksiyani chaqirish usuli qaysi?",
+  options: ["functionName();", "functionName[];", "functionName{}", "functionName<>;"],
+  correctAnswer: 0,
 },
 // 42
 {
-question: "",
-options: ["", "", "", ""],
+question: "let x = 5; x += 3; ifodasining natijasi nima?",
+options: ["5", "8", "3", "Xato malumot"],
 correctAnswer: 1,
 }
 ,
 // 43
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "let x = {}; bu nima?",
+options: ["Massiv", "Funksiya", "Obyekt", "Satr"],
+correctAnswer: 2,
 },
 // 44
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "Qaysi metod massivning uzunligini qaytaradi?",
+options: ["length()", "size()", "length", "getLength()"],
+correctAnswer: 3,
 }
 ,
 // 45
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "let arr = [1, 2, 3]; arr.push(4); Massivdagi oxirgi element nima?",
+options: ["1", "3", "4", "undefined"],
+correctAnswer: 2,
 },
 // 46
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: 'console.log(5 > 3 ? "Ha" : "Yoq") natijasi nima boladi?',
+options: ["Ha", "Yoq", "undefined", "Xato beradi"],
+correctAnswer: 0,
 }
 ,
 // 47
 {
-question: "",
-options: ["", "", "", ""],
+question: "console.log(typeof null); natijasi nima bo'ladi?",
+options: ["null", "object", "undefined", "string"],
 correctAnswer: 1,
 },
 // 48
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "Massivni teskari aylantirish uchun qaysi metod ishlatiladi?",
+options: ["sort()", "reduce()", "splice()", "reverse()"],
+correctAnswer: 3,
 }
 ,
 // 49
 {
-question: "",
-options: ["", "", "", ""],
+question: "let a; console.log(a); natijasi nima bo'ladi?",
+options: ["null", "undefined", "NaN", "0"],
 correctAnswer: 1,
 },
 // 50
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: 'let x = 5; console.log(x == "5"); natijasi nima boladi?',
+options: ["NaN", "false", "true", "undefined"],
+correctAnswer: 2,
 },
 // 61
 {
-  question: "",
-  options: ["", "", "", ""],
-  correctAnswer: 1,
+  question: "JavaScriptda bitta qatorda qanday izoh yoziladi?",
+  options: ["# Izoh", "-- Izoh", "// Izoh", "/* Izoh */"],
+  correctAnswer: 2,
 },
 // 62
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "Funksiyadan qiymatni qaytarish uchun qaysi kalit so'z ishlatiladi?",
+options: ["return", "break", "continue", "stop"],
+correctAnswer: 0,
 }
 ,
 // 63
 {
-question: "",
-options: ["", "", "", ""],
+question: "let arr = [1, 2, 3]; arr.pop(); natijasida massiv qanday ko'rinishga ega bo'ladi?",
+options: ["[1, 2, 3]", "[1, 2]", "[2, 3]", "[]"],
 correctAnswer: 1,
 },
 // 64
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "let x = '5'; console.log(Number(x)); natijasi nima bo'ladi?",
+options: ["5", "'5'", "NaN", "undefined"],
+correctAnswer: 0,
 }
 ,
 // 65
 {
-question: "",
-options: ["", "", "", ""],
+question: "console.log(5 + '5'); natijasi nima bo'ladi?",
+options: ["10", "55", "NaN", "undefined"],
 correctAnswer: 1,
 },
 // 66
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "Qaysi kalit so'z global o'zgaruvchi e'lon qilishda ishlatilmaydi?",
+options: ["var", "let", "const", "window"],
+correctAnswer: 3,
 }
 ,
 // 67
 {
-question: "",
-options: ["", "", "", ""],
+question: "Object.keys(obj) nima qiladi?",
+options: ["Ob'ektdagi barcha qiymatlarni qaytaradi", "Ob'ektdagi barcha kalitlarni qaytaradi", "Ob'ektni massivga aylantiradi", "Ob'ektni tozalaydi"],
 correctAnswer: 1,
 },
 // 68
 {
-question: "",
-options: ["", "", "", ""],
+question: "5 > 4 || 3 > 6 natijasi nima bo'ladi",
+options: ["false", "true", "undefined", "NaN"],
 correctAnswer: 1,
 }
 ,
 // 69
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "5 > 4 && 3 > 6 natijasi nima bo'ladi",
+options: ["false", "true", "undefined", "NaN"],
+correctAnswer: 0,
 },
 // 70
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "let x = [1, 2, 3]; console.log(x[3]); natijasi nima bo'ladi?",
+options: ["undefined", "3", "NaN", "Xato beradi"],
+correctAnswer: 0,
 },      
 // 71
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "setInterval() nima qiladi?",
+options: ["Kodni kechiktiradi", "Funksiyani to'xtatadi", "Kodni qayta-qayta bajaradi", "Kodni teskari aylantiradi"],
+correctAnswer: 2,
 },
 // 72
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "console.log(1 || 0); natijasi nima bo'ladi?",
+options: ["0", "undefined", "NaN", "1"],
+correctAnswer: 3,
 }
 ,
 // 73
 {
-question: "",
-options: ["", "", "", ""],
+question: "console.log(1 && 0); natijasi nima bo'ladi?",
+options: ["1", "0", "undefined", "NaN"],
 correctAnswer: 1,
 },
 // 74
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "let x = '10'; console.log(+x) natijasi nima bo'ladi?",
+options: ["10", "11", "NaN", "undefined"],
+correctAnswer: 0,
 }
 ,
 // 75
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "console.log(2 ** 3); natijasi nima bo'ladi?",
+options: ["6", "12", "8", "4"],
+correctAnswer: 2,
 },
 // 76
 {
-question: "",
-options: ["", "", "", ""],
+question: "let x = [1, 2, 3]; console.log(x.length); natijasi nima bo'ladi?",
+options: ["2", "3", "4", "undefined"],
 correctAnswer: 1,
 }
 ,
 // 77
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "console.log('5' - 2); natijasi nima bo'ladi?",
+options: ["3", "52", "NaN", "Xato beradi"],
+correctAnswer: 0,
 },
 // 78
 {
-question: "",
-options: ["", "", "", ""],
+question: "JavaScriptda massivlar qanday turga kiradi?",
+options: ["Primitive", "Object", "String", "Boolean"],
 correctAnswer: 1,
 }
 ,
 // 79
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "let x = 'Hello'; console.log(x.toUpperCase()); natijasi nima bo'ladi?",
+options: ["hello", "Hello", "HELLO", "undefined"],
+correctAnswer: 2,
 },
 // 80
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "Math.floor(2.9) natijasi nima bo'ladi?",
+options: ["3", "2.9", "2", "NaN"],
+correctAnswer: 2,
 },
 // 81
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "Math.max(1, 5, 3) natijasi nima bo'ladi?",
+options: ["1", "153", "8", "5"],
+correctAnswer: 3,
 },
 // 82
 {
-question: "",
-options: ["", "", "", ""],
+question: "console.log(5 == '5'); natijasi nima bo'ladi?",
+options: ["false", "true", "NaN", "Xato beradi"],
 correctAnswer: 1,
 }
 ,
 // 83
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "console.log(5 === '5'); natijasi nima bo'ladi?",
+options: ["false", "true", "NaN", "Xato beradi"],
+correctAnswer: 0,
 },
 // 84
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "typeof [] nima qaytaradi?",
+options: ["null", "undefined", "array", "object"],
+correctAnswer: 3,
 }
 ,
 // 85
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "let obj = { a: 1 }; console.log(obj['a']); natijasi nima bo'ladi?",
+options: ["undefined", "null", "1", "Xato beradi"],
+correctAnswer: 2,
 },
 // 86
 {
-question: "",
-options: ["", "", "", ""],
+question: "let a = null; console.log(typeof a); natijasi nima bo'ladi?",
+options: ["null", "object", "undefined", "NaN"],
 correctAnswer: 1,
 }
 ,
 // 87
 {
-question: "",
-options: ["", "", "", ""],
-correctAnswer: 1,
+question: "console.log(typeof NaN); natijasi nima bo'ladi?",
+options: ["number", "NaN", "undefined", "string"],
+correctAnswer: 0,
 },
 // 88
 {
