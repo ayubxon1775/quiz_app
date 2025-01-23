@@ -759,131 +759,579 @@ correctAnswer: 2,
   {
     category: "JavaScript",
     questions: [
+      // 1
       {
-        question: "What is the square root of 144?",
-        options: ["10", "11", "12", "13"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 15 × 13?",
-        options: ["180", "185", "195", "200"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 8³?",
-        options: ["512", "216", "256", "128"],
+        question: "JavaScript nima?",
+        options: ["Dasturlash tili", "Ma'lumotlar bazasi", "Operatsion tizim", "Veb-server"],
         correctAnswer: 0,
       },
+      // 2
       {
-        question: "What is 48 ÷ 6?",
-        options: ["7", "8", "9", "10"],
-        correctAnswer: 1,
+        question: "'var' kalit so'zi JavaScriptda nima uchun ishlatiladi?",
+        options: ["O'zgaruvchi e'lon qilish uchun", "Funksiya yaratish uchun", "Ma'lumotlarni o'chirish uchun", "Stil qo'shish uchun"],
+        correctAnswer: 0,
       },
+      // 3
       {
-        question: "What is the value of 3 + 5 × 4?",
-        options: ["20", "22", "24", "23"],
+        question: "JavaScriptda qaysi belgi orqali komment yoziladi?",
+        options: ["//", "/* */", "*/ /*", "#"],
+        correctAnswer: 0,
+      },
+      // 4
+      {
+        question: "JavaScriptda arrayni qanday yaratish mumkin?",
+        options: ["let arr = {};", "let arr = ();", "let arr = <>;", "let arr = [];"],
         correctAnswer: 3,
       },
+      // 5
       {
-        question: "What is the sum of the angles in a triangle?",
-        options: ["180°", "360°", "90°", "270°"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the perimeter of a square with a side length of 4 cm?",
-        options: ["12 cm", "16 cm", "20 cm", "24 cm"],
+        question: "JavaScriptda ekranga matn qanday chiqariladi?",
+        options: ["print()", "console.log", "echo", "document. Write()"],
         correctAnswer: 1,
       },
+      // 6
       {
-        question: "What is 11²?",
-        options: ["121", "131", "141", "111"],
-        correctAnswer: 3,
+        question: "'typeof' operatori nima uchun ishlatiladi?",
+        options: ["O'zgaruvchi turini aniqlash uchun", "O'zgaruvchi qiymatini o'zgartirish uchun", "Ma'lumotlarni o'chirish uchun", "Massiv uzunligini topish uchun"],
+        correctAnswer: 0,
       },
+      // 7
       {
-        question: "What is 9 × 12?",
-        options: ["105", "110", "108", "120"],
+        question: "JavaScriptda 'let' bilan 'const' orasidagi asosiy farq nima?",
+        options: ["'const' faqat massivlar uchun ishlatiladi", "'let' faqat funksiyalar uchun ishlatiladi", "'const' qiymati o'zgarmaydi, 'let' qiymati o'zgaradi", "'let' qayta e'lon qilinishi mumkin, 'const' esa yo'q"],
         correctAnswer: 2,
       },
+      // 8
       {
-        question: "What is the value of 16 ÷ 4?",
-        options: ["2", "3", "4", "5"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 25% of 200?",
-        options: ["30", "40", "50", "60"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the area of a rectangle with length 5 cm and width 8 cm?",
-        options: ["40 cm²", "50 cm²", "55 cm²", "60 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 ÷ 2 + 3?",
-        options: ["8", "7", "9", "6"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 3 × 7 + 2?",
-        options: ["20", "21", "22", "23"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the greatest common divisor (GCD) of 24 and 36?",
-        options: ["4", "6", "8", "12"],
+        question: "JavaScriptda "===" operatori nimani anglatadi?",
+        options: ["Qo'shish operatori", "Bo'lish operatori", " Faqat qiymatni solishtiradi", "Solishtirishni (qiymat va turini) tekshiradi"],
         correctAnswer: 3,
       },
+      // 9
       {
-        question: "What is the least common multiple (LCM) of 6 and 8?",
-        options: ["24", "32", "48", "56"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 2³ × 3?",
-        options: ["12", "15", "18", "24"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 × (5 + 3)?",
-        options: ["80", "70", "60", "50"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the value of 14 × 14?",
-        options: ["186", "196", "206", "216"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the sum of the first 10 positive integers?",
-        options: ["50", "55", "60", "65"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 12 × 15?",
-        options: ["150", "160", "170", "180"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the area of a circle with a radius of 3 cm? (Use π = 3.14)",
-        options: ["28.26 cm²", "31.42 cm²", "36.14 cm²", "39.14 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of (8 + 2) × 3?",
-        options: ["30", "32", "34", "28"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the value of 50% of 80?",
-        options: ["30", "35", "40", "45"],
+        question: "JavaScriptda 'null' nimani bildiradi?",
+        options: ["Funksiyani", "Ob'yektni", "hech qanday qiymat mavjud emasligini", "Nolinchi qiymatni"],
         correctAnswer: 2,
       },
-      {
-        question: "What is the value of 25 ÷ 5 × 3?",
-        options: ["12", "15", "18", "20"],
+      // 10
+       {
+        question: "'NaN' nimani anglatadi?",
+        options: ["Number and Null", "Not a Number", "No additional Numbers", "Null and Number"],
         correctAnswer: 1,
+      }
+      ,
+      // 11
+       {
+        question: "JavaScriptda funksiyani qanday yaratish mumkin?",
+        options: ["function myFunc() {}", "create function myFunc() {}", "def myFunc() {}", "new Function() {}"],
+        correctAnswer: 0,
       },
+     // 12
+     {
+      question: "JavaScriptda 'if' shart operatorining to'g'ri sintaksisi qaysi?",
+      options: ["if (shart) { kod }", "if shart { kod }", "if: shart { kod }", "if [shart] { kod }"],
+      correctAnswer: 0,
+    },
+    // 13
+     {
+      question: "JavaScriptda 'for' siklining to'g'ri yozilishi qaysi?",
+      options: ["for (let i; i < 10; i++) { kod }", "for let i = 0; i < 10; { kod }", "for (i = 0; i < 10; i--) { kod }", "for (let i = 0; i < 10; i++){ kod }"],
+      correctAnswer: 3,
+    },
+     // 14
+     {
+      question: "JavaScriptda 'event' nima?",
+      options: ["Bu funksiyaning bir turi", "Bu biror hodisa (masalan, tugmani bosish)", "Bu ma'lumotlar turi", "Bu massiv"],
+      correctAnswer: 1,
+    }
+    ,
+    // 15
+     {
+      question: "DOM nima uchun ishlatiladi?",
+      options: ["HTML elementlari bilan ishlash uchun", "CSS o'zgartirish uchun", "Faqat ma'lumotlarni saqlash uchun", "Funksiyalarni chaqirish uchun"],
+      correctAnswer: 0,
+    },
+     // 16
+     {
+      question: "JavaScriptda 'JSON' nima?",
+      options: ["Veb-sahifa dizayn tili", "Operatsion tizim", "Ma'lumotlarni almashish formati", "JavaScript funksiyasi"],
+      correctAnswer: 2,
+    }
+    ,
+    // 17
+     {
+      question: "JavaScriptda 'window.alert()' funksiyasi nima qiladi?",
+      options: ["Stil qo'shadi", "HTMLni o'zgartiradi", "Konsolda ma'lumot chiqaradi", "Bildirishnoma chiqaradi"],
+      correctAnswer: 3,
+    },
+     // 18
+     {
+      question: "JavaScriptda 'isNaN()' funksiyasi nima uchun ishlatiladi?",
+      options: ["Qiymat raqam emasligini tekshirish uchun", "Qiymat satr ekanligini aniqlash uchun", "Qiymat massiv ekanligini aniqlash uchun", "Qiymat ob'ekt ekanligini aniqlash"],
+      correctAnswer: 0,
+    }
+    ,
+    // 19
+     {
+      question: "JavaScriptda 'splice()' metodi nima qiladi?",
+      options: ["Massivdan elementlarni o'chiradi yoki qo'shadi", "Massivni boshqaradi", "Massivni boshqa massivga aylantiradi", "Massivni saralaydi"],
+      correctAnswer: 0,
+    },
+    // 20
+     {
+      question: "JavaScriptda 'addEventListener' metodi nima uchun ishlatiladi?",
+      options: ["Massivga yangi element qo'shish uchun", "Elementga hodisa qo'shish uchun", "Elementni o'chirish uchun", "Konsolga ma'lumot chiqarish uchun"],
+      correctAnswer: 1,
+    },      
+    // 21
+    {
+      question: "JavaScriptda 'Math.random()' funksiyasi nima uchun ishlatiladi?",
+      options: ["Sonlarni kamaytirish uchun", "Sonlarni qo'shish uchun", "Tasodifiy son yaratish uchun", "Sonlarni butun son qilish uchun"],
+      correctAnswer: 2,
+    },
+   // 22
+   {
+    question: "JavaScriptda 'setTimeout()' funksiyasi nima qiladi?",
+    options: ["Hodisalarni qayd qiladi", "Ma'lumotlarni tozalaydi", "Funksiyani bekor qiladi", "Funksiyani kechiktirib bajaradi"],
+    correctAnswer: 3,
+  }
+  ,
+  // 23
+   {
+    question: "JavaScriptda 'reduce()' metodi nima uchun ishlatiladi?",
+    options: ["massivdagi ma'lumotlarni yig‘indiga yoki yakuniy qiymatga birlashtiradi", "Massiv uzunligini o'zgartirish uchun", "Elementlarni ajratib olish uchun", "Massiv elementlarini tartiblash uchun"],
+    correctAnswer: 0,
+  },
+   // 24
+   {
+    question: "JavaScriptda 'Promise' nima?",
+    options: ["CSSni boshqarish vositasi", "DOMni boshqarish vositasi", "Massivlarni boshqarish vositasi", "Asinxron operatsiyalarni boshqarish vositasi"],
+    correctAnswer: 3,
+  }
+  ,
+  // 25
+   {
+    question: "JavaScriptda 'arrow function' qanday yoziladi?",
+    options: ["() => {}", "function => {}", "def => {}", "new Function() {}"],
+    correctAnswer: 0,
+  },
+   // 26
+   {
+    question: "JavaScriptda 'filter()' metodi nima uchun ishlatiladi?",
+    options: ["Massivlarni tartiblash uchun", "DOMni boshqarish uchun", "massivdagi elementlarni berilgan shart asosida filtrlab, yangi massivni hosil qilish", "Elementlarni ajratib olish uchun"],
+    correctAnswer: 2,
+  }
+  ,
+  // 27
+   {
+    question: "JavaScriptda 'map()' metodi nima qiladi?",
+    options: ["Hodisalarni boshqarish uchun", "massivning har bir elementiga tegishli operatsiyani bajarib, yangi massivni hosil qilish", "Elementlarni ajratish uchun", "Elementlarni o'chirish uchun"],
+    correctAnswer: 1,
+  },
+   // 28
+   {
+    question: "JavaScriptda 'try...catch' bloki nima uchun ishlatiladi?",
+    options: ["DOM elementlarini o'zgartirish uchun", "O'zgaruvchini o'chirish uchun", "Xatolarni ushlash va boshqarish uchun", "Eventlarni qo'shish uchun"],
+    correctAnswer: 2,
+  }
+  ,
+  // 29
+   {
+    question: "JavaScriptda 'parseInt()' funksiyasi nima qiladi?",
+    options: ["Satrdan butun son ajratib oladi", "Satrdan massiv hosil qiladi", "DOM elementlarini o'chiradi", "Sonlarni satrga o'zgartiradi"],
+    correctAnswer: 0,
+  },
+  // 30
+   {
+    question: "JavaScriptda 'includes()' metodi nima uchun ishlatiladi?",
+    options: ["DOM elementini qo'shish uchun", "Satrdan yoki massivdan ma'lum qiymatni qidirish uchun", "Elementlarni saralash uchun", "Funksiyani chaqirish uchun"],
+    correctAnswer: 1,
+  },
+  // 31
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: 1,
+  },
+ // 32
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+}
+,
+// 33
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+},
+ // 34
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+}
+,
+// 35
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+},
+ // 36
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+}
+,
+// 37
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+},
+ // 38
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+}
+,
+// 39
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+},
+// 40
+ {
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+},      
+// 41
+{
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+},
+// 42
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 43
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 44
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 45
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 46
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 47
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 48
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 49
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 50
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 61
+{
+  question: "",
+  options: ["", "", "", ""],
+  correctAnswer: 1,
+},
+// 62
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 63
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 64
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 65
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 66
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 67
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 68
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 69
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 70
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},      
+// 71
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 72
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 73
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 74
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 75
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 76
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 77
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 78
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 79
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 80
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 81
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 82
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 83
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 84
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 85
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 86
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 87
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 88
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 89
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 90
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},      
+// 91
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 92
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 93
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 94
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 95
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 96
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 97
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 98
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+}
+,
+// 99
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+// 100
+{
+question: "",
+options: ["", "", "", ""],
+correctAnswer: 1,
+},
+    
     ],
   },
 
